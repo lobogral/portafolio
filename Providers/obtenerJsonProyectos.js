@@ -1,6 +1,6 @@
 import { URLGithub } from "../Assets/URLGithub.js"
 
-var jsonProyectos = {}
+var jsonProyectos = []
 
 export function obtenerJsonProyectos(){
   fetch(URLGithub)

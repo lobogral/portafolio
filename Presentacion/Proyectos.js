@@ -21,9 +21,8 @@ export function recargarProyectos(){
       + "  <div class='row'>"
       + "    <div class='col s12 m12 l12'>"
     
-    if(JSON.stringify(jsonProyectos) !== '{}'){
-      jsonProyectos.forEach(element => {
-        texto +=   
+    jsonProyectos.forEach(element => {
+      texto +=   
           "      <div id='proyectos-card' class='card grey lighten-1'>"
         + "        <div class='card-content black-text'>"
         + "          <span class='card-title'>" + element.nombre + "</span>"
@@ -33,8 +32,7 @@ export function recargarProyectos(){
         + "          <i class='material-icons'>link</i>"
         + "        </a>"
         + "      </div>" 
-      }); 
-    }     
+      });    
     
     texto +=
         "    </div>"
